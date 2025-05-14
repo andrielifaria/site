@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Site do Açaí Delícia</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <h1>Bem-vindo ao Açaí DeLight compras</h1>
+  <p>O melhor açaí da sua cidade!</p>
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Compra com QR Code</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 80px;
+      background-color: rgb(245, 206, 255);
+    }
+
+    h2 {
+      color: #800080;
+    }
+
+    img.qrcode {
+      width: 200px;
+      height: 200px;
+      margin-top: 20px;
+    }
+
+    a.voltar {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #800080;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    a.voltar:hover {
+      background-color: #5a005a;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Escaneie o QR Code para comprar seu Açaí</h2>
+  <p>Aponte a câmera do seu celular para o código abaixo:</p>
+
+  <!-- Substitua a URL abaixo pela sua URL real de pagamento -->
+  <img class="qrcode" src="/qr.png.png" alt="QR Code para comprar açaí">
+
+  <br>
+  <a href="index.html" class="voltar">Voltar à Página Inicial</a>
+
+  <title>Confirmação de Compra</title>
+  <style>
+    #confirmacao {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #c9d3c5;
+      color: #3c763d;
+      border: 1px solid #d6e9c6;
+    }
+
+    #botao2 {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #800080;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    
+  </style>
+
+<h1>Finalizar Compra</h1>
+<button id="botao2" onclick="confirmarCompra()">Confirmar Compra</button>
+
+<div id="confirmacao">
+  <h2>✅ Compra confirmada!</h2>
+  <p>Obrigado por sua compra.</p>
+</div>
+
+<script>
+  function confirmarCompra() {
+    // Aqui você pode adicionar lógica para processar o pedido no backend, se necessário
+    document.getElementById("confirmacao").style.display = "block";
+  }
+</script>
+</body>
+</html>
